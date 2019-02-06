@@ -2,7 +2,7 @@ function filterSelection(c) {
   var x, i,j;
   x = document.getElementsByClassName("filterDiv")
   if (c == "Show all " || c==" Show all") c = "";
-  if (c == "others") c = "othe"
+  //if (c == "others") c = "othe"
   for (i = 0; i < x.length; i++) {
     x[i].classList.remove("show");;
     if (x[i].className.indexOf(c) > -1) x[i].classList.add("show");;

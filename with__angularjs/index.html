@@ -27,7 +27,7 @@
 
   </script>
 </head>
-<body ng-app='myapp' onload="filterSelection('all');showcount_type();showcount_year()">
+<body ng-app='myapp'>
   <div class="container">
     <div class = "btn-group" id ="btn_type">
       <!--<button class="btn btn1 btn-secondary active" onclick="check1('all')"><p>Show all<span class="small_font" id="for_all"></p></button>-->
@@ -38,7 +38,7 @@
               <button class="btn btn1 btn-secondary" onclick="check_type('Personally Identifiable Information');showcount_year();">Personally Identifiable Information <span class="small_font" id="Personally_Identifiable_Information"></button>
                 <button class="btn btn1 btn-secondary" onclick="check_type('Protected Health Information');showcount_year();">Protected Health Information <span class="small_font" id="Protected_Health_Information"></button>
                   <button class="btn btn1 btn-secondary" onclick="check_type('Hardware stolen');showcount_year();">Hardware Stolen <span class="small_font" id="Hardware_stolen"></button>
-                    <button class="btn btn1 btn-secondary" onclick="check_type('none');showcount_year();">None <span class="small_font" id="noone"></button>
+                    <button class="btn btn1 btn-secondary" onclick="check_type('none');showcount_year();">none <span class="small_font" id="noone"></button>
                     </div>
                     <hr>
 
@@ -52,7 +52,7 @@
                                   <button class="btn btn2 btn-secondary" onclick="check_date('2013');showcount_type();">2013 <span class="small_font" id="2013"></button>
                                     <button class="btn btn2 btn-secondary" onclick="check_date('2012');showcount_type();">2012 <span class="small_font" id="2012"></button>
                                       <button class="btn btn2 btn-secondary" onclick="check_date('2011');showcount_type();">2011 <span class="small_font" id="2011"></button>
-                                        <button class="btn btn2 btn-secondary" onclick="check_date('2010');showcount_type();">2010 <span class="small_font" id="2010"></p></button>
+                                        <button class="btn btn2 btn-secondary" onclick="check_date('2010');showcount_type();">2010 <span class="small_font" id="2010"></button>
                                           <button class="btn btn2 btn-secondary" onclick="check_date('othe');showcount_type();">Others <span class="small_font" id="others"></button>
                                           </div>
                                           <hr>
@@ -64,7 +64,7 @@
                                                 <h3>{{value.Company_Name}}</h3>
                                               </div>
 
-                                              <div class="filterDiv on_{{value.Rank+ ' ' + value.Incident_Type}} {{value.Incident_Date|limitTo:4}}">
+                                              <div class="filterDiv on_{{value.Rank}} {{value.Incident_Type}} {{value.Incident_Date|limitTo:4}}">
                                                 <div class = "row">
                                                   <div class = "col-sm-2">
                                                     <div class = "row">

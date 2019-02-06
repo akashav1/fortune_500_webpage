@@ -118,7 +118,7 @@ function showcount_year_nc(){
       else if(j[k].classList.contains("2012")) g = g + 1 ;
       else if(j[k].classList.contains("2011")) h = h + 1 ;
       else if(j[k].classList.contains("2010")) u = u + 1 ;
-      else if(j[k].classList.contains("others")) ou = ou + 1 ;
+      else if(j[k].classList.contains("othe")) ou = ou + 1 ;
       all = all + 1;
     }
   }
