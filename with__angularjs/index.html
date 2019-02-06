@@ -27,7 +27,7 @@
 
   </script>
 </head>
-<body onload="filterSelection('Show all');showcount_type();showcount_year()" ng-app='myapp'>
+<body ng-app='myapp' onload="filterSelection('all');showcount_type();showcount_year()">
   <div class="container">
     <div class = "btn-group" id ="btn_type">
       <!--<button class="btn btn1 btn-secondary active" onclick="check1('all')"><p>Show all<span class="small_font" id="for_all"></p></button>-->
@@ -53,7 +53,7 @@
                                     <button class="btn btn2 btn-secondary" onclick="check_date('2012');showcount_type();">2012 <span class="small_font" id="2012"></button>
                                       <button class="btn btn2 btn-secondary" onclick="check_date('2011');showcount_type();">2011 <span class="small_font" id="2011"></button>
                                         <button class="btn btn2 btn-secondary" onclick="check_date('2010');showcount_type();">2010 <span class="small_font" id="2010"></p></button>
-                                          <button class="btn btn2 btn-secondary" onclick="check_date'others');showcount_type();">Others <span class="small_font" id="others"></button>
+                                          <button class="btn btn2 btn-secondary" onclick="check_date('othe');showcount_type();">Others <span class="small_font" id="others"></button>
                                           </div>
                                           <hr>
                                           <button class = "btn btn-secondary" type="submit" onclick="window.open('Fortune 500 cyber incidents_12-13-18 - Copy.xlsx')">Download the data set!</button>
