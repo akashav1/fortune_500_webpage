@@ -1,0 +1,11 @@
+[
+	{
+		"list_export_id":"1",
+		"Rank":"1",
+		"Company_Name":"Walmart",
+		"Incident_Date":"2016-05-10",
+		"Incident_Type":"Personally Identifiable Information",
+		"Incident_Details":"Skimmers were planted on the credit card machines, almost 37 customers credit card details were leaked",
+		"Source_URL":"https:\/\/www.infosecurity-magazine.com\/news\/walmart-confirms-card-data-theft\/"
+	}
+]
